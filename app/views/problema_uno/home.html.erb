@@ -1,2 +1,14 @@
-<h1>ProblemaUno#home</h1>
-<p>Find me in app/views/problema_uno/home.html.erb</p>
+<% provide(:date, Time.now) %>
+<% provide(:zone, Time.zone) %>
+<h1>Home</h1>
+
+<h2><%= yield(:date) %>, <%= yield(:zone) %></h2>
+
+<p>
+  Links hacia otras p&aacuteginas:
+    <ol>
+      <li><a href = "/problema_uno/basics">Basics</a></li>
+      <li><a href = "/problema_uno/ruby">Ruby</a></li>
+      <li><a href = "/problema_uno/git">Git</a></li>
+    </ol>
+</p>

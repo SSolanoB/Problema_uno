@@ -1,5 +1,3 @@
-heroku class ApplicationController < ActionController::Base
-  def hello
-    render html: "Hello World!"
-  end
+class ApplicationController < ActionController::Base
+  protect_from_forgery with: :exception
 end
