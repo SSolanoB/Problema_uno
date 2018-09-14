@@ -8,21 +8,21 @@
     <li>Inicialización de un repositorio de git nuevo en una aplicación existente<br />
     &emsp;&emsp;Es</li>
     <li>Creación de un branch nuevo<br />
-    &emsp;&emsp;Es</li>
+    &emsp;&emsp;Se realiza con el siguiente código: git checkout -b &lt;nombre_branch&gt;</li>
     <li>Realizar un commit incluyendo todos los cambios actuales<br />
-    &emsp;&emsp;Es</li>
+    &emsp;&emsp;Para realizar un commit se utiliza: git commit -am "Mensaje". El flag <i>a</i> permite saltarse el comando de git add -A, cuando no se han añadido archivos nuevos, pero sí se han modificado o eliminado archivos existentes. </li>
     <li>¿Cómo enviar el código al repositorio remoto?<br />
-    &emsp;&emsp;Es</li>
+    &emsp;&emsp;Con el siguiente código: git push origin master. Donde <i>origin</i> corresponde al respositorio remoto. Si no se hace el siguiente paso, se debe especificar la URL del repositorio, en lugar de "origin".</li>
     <li>¿Cómo configurar el origen del repositorio remoto para evitar escribirlo siempre cada vez que se hace un push o un pull?<br />
-    &emsp;&emsp;Es</li>
+    &emsp;&emsp;Con el siguiente código: git remote add origin &lt;URL&gt;</li>
     <li>Diferencia entre un reset y un revert<br />
-    &emsp;&emsp;Es</li>
+    &emsp;&emsp;Con el reset, en el nivel de commits, se puede descartar commits hechos en una rama privada, o descartar cambios que no han sido confirmados. Por otro lado, el revert deshace los commits en una rama pública. A nivel de archivos, el reset quita el archivo del <i>staging area</i>, mientras que el revert no hace nada.</li>
     <li>Además de cambiar de ramas, ¿para qué más se puede utilizar el comando git checkout?<br />
     &emsp;&emsp;Es</li>
-    <li>¿Cómo puede ver los commits que se han ralizado en el proyecto?<br />
-    &emsp;&emsp;Es</li>
+    <li>¿Cómo puede ver los commits que se han realizado en el proyecto?<br />
+    &emsp;&emsp;Con el comando: git log.</li>
     <li>He modificado dos archivos y quiero hacer un commit por cada uno de ellos, ¿cómo lo puedo hacer?<br />
-    &emsp;&emsp;Es</li>
+    &emsp;&emsp;Lo puede hacer con lo siguiente: git commit -m "mensaje" &lt;path to the specific file&gt;</li>
   </ul>
 
 </p>
